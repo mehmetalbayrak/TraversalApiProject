@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TraversalApiProject.DataAccess.Context;
 using TraversalApiProject.DataAccess.Entities;
 
 namespace TraversalApiProject.Controllers
 {
+    [EnableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class VisitorController : ControllerBase
